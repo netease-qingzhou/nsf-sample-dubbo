@@ -42,18 +42,4 @@ public class CastKit {
 	public static JsonNode str2Node(String str) throws Exception {
 		return om.readTree(str);
 	}
-	
-	public static void main(String[] args) {
-		
-		try {
-			JsonNode node = str2Node("{\"10001\":{\"code\": \"1000001\", \"percent\": 0.018165, \"high\": 11.22}}");
-			node.forEach(n -> {
-				
-			});
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 }
